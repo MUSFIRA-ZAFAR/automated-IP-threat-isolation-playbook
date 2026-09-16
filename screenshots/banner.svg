@@ -1,0 +1,68 @@
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="55%" stop-color="#101a2e"/>
+      <stop offset="100%" stop-color="#1a2a44"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff5f6d"/>
+      <stop offset="100%" stop-color="#ffc371"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="85%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="260" fill="url(#bg)"/>
+  <rect width="1200" height="260" fill="url(#glow)"/>
+
+  <!-- subtle grid lines -->
+  <g stroke="#2a3a56" stroke-width="1" opacity="0.35">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+  </g>
+
+  <!-- node/flow motif -->
+  <g opacity="0.9">
+    <circle cx="90" cy="200" r="7" fill="#38bdf8"/>
+    <line x1="97" y1="200" x2="220" y2="200" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="228" cy="200" r="7" fill="#f97316"/>
+    <line x1="235" y1="200" x2="358" y2="200" stroke="#f97316" stroke-width="2"/>
+    <circle cx="366" cy="200" r="7" fill="#a78bfa"/>
+    <line x1="373" y1="200" x2="496" y2="200" stroke="#a78bfa" stroke-width="2"/>
+    <circle cx="504" cy="200" r="7" fill="#34d399"/>
+    <line x1="511" y1="200" x2="634" y2="200" stroke="#34d399" stroke-width="2"/>
+    <circle cx="642" cy="200" r="7" fill="#fbbf24"/>
+  </g>
+  <g font-family="Consolas, 'Courier New', monospace" font-size="12" fill="#8fa3c4">
+    <text x="70" y="222">Webhook</text>
+    <text x="200" y="222">AbuseIPDB</text>
+    <text x="345" y="222">Condition</text>
+    <text x="480" y="222">Lambda</text>
+    <text x="620" y="222">Slack</text>
+  </g>
+
+  <rect x="60" y="45" width="46" height="6" rx="3" fill="url(#accent)"/>
+  <text x="60" y="105" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#f4f7ff">
+    Automated IP Threat Isolation Playbook
+  </text>
+  <text x="60" y="140" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#9db2d6">
+    A SOAR pipeline that detects, decides, and contains — end to end, no human click required
+  </text>
+
+  <g font-family="Consolas, 'Courier New', monospace" font-size="13" fill="#0b1220">
+    <rect x="60" y="160" width="86" height="24" rx="12" fill="#38bdf8"/>
+    <text x="74" y="176">Shuffle</text>
+
+    <rect x="154" y="160" width="98" height="24" rx="12" fill="#f97316"/>
+    <text x="167" y="176">AbuseIPDB</text>
+
+    <rect x="260" y="160" width="60" height="24" rx="12" fill="#a78bfa"/>
+    <text x="272" y="176">AWS</text>
+
+    <rect x="328" y="160" width="60" height="24" rx="12" fill="#34d399"/>
+    <text x="339" y="176">Slack</text>
+  </g>
+</svg>
